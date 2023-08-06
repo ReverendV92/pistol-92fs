@@ -1,0 +1,264 @@
+
+$sequence idle {
+	v_pistol_anim_@idle01
+	activity ACT_VM_IDLE 1
+	fadein 0.2
+	fadeout 0.2
+	node "0"
+	// snap
+	fps 30
+	loop
+}
+
+$sequence idle_is {
+	v_pistol_anim_@idle01
+	activity ACT_VM_IDLE_SILENCED 1
+	fadein 0.2
+	fadeout 0.2
+	node "0"
+	// snap
+	fps 30
+	loop
+	frames 0 1
+}
+
+$sequence idle_empty {
+	v_pistol_anim_@idle01empty
+	activity ACT_VM_IDLE_EMPTY 1
+	fadein 0.2
+	fadeout 0.2
+	node "0"
+	// snap
+	fps 30
+	loop
+}
+
+$sequence fire {
+	v_pistol_anim_@fire
+	activity ACT_VM_PRIMARYATTACK 1
+	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence fire_is1 {
+	v_pistol_anim_@fire
+	activity ACT_VM_PRIMARYATTACK_IRONSIGHTED1 1
+	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence fire_is2 {
+	v_pistol_anim_@fire
+	activity ACT_VM_PRIMARYATTACK_IRONSIGHTED2 1
+	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence fire_is3 {
+	v_pistol_anim_@fire
+	activity ACT_VM_PRIMARYATTACK_IRONSIGHTED3 1
+	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence recoil_1 {
+	v_pistol_anim_@fire1
+	activity ACT_VM_RECOIL1 1
+	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence recoil_2 {
+	v_pistol_anim_@fire2
+	activity ACT_VM_RECOIL2 1
+	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence recoil_3 {
+	v_pistol_anim_@fire3
+	activity ACT_VM_RECOIL3 1
+	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence fire_empty {
+	v_pistol_anim_@fireempty
+	activity ACT_VM_DRYFIRE 1
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence fire_last {
+	v_pistol_anim_@fireempty
+	activity ACT_VM_FIRELAST 1
+	fadein 0
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence draw {
+	v_pistol_anim_@draw
+	activity ACT_VM_DRAW 1
+	fadein 0.2
+	fadeout 0
+	node "0"
+	// snap
+	fps 30
+}
+
+$sequence draw_empty {
+	v_pistol_anim_@drawempty
+	activity ACT_VM_DRAW_EMPTY 1
+	fadein 0.2
+	fadeout 0.2
+	node "0"
+	snap
+	fps 30
+}
+
+$sequence reload {
+	v_pistol_anim_@reload
+	activity ACT_VM_RELOAD 1
+	fadein 0.2
+	fadeout 0
+	node "0"
+	// snap
+	fps 30
+}
+
+$sequence reload_empty {
+	v_pistol_anim_@reload
+	activity ACT_VM_RELOAD_EMPTY 1
+	fadein 0.2
+	fadeout 0
+	node "0"
+	// snap
+	fps 30
+}
+
+$sequence holster {
+	v_pistol_anim_@holster
+	activity ACT_VM_HOLSTER 1
+	fadein 0.2
+	fadeout 0
+	node "0"
+	// snap
+	fps 30
+}
+
+$sequence holsterempty {
+	v_pistol_anim_@holsterempty
+	activity ACT_VM_HOLSTER_EMPTY 1
+	fadein 0.2
+	fadeout 0.2
+	node "0"
+	snap
+	fps 30
+}
+
+$sequence idle_to_low {
+	v_pistol_anim_@idletolow
+	activity ACT_VM_LOWERED_TO_IDLE 1
+	fadein 0.8
+	fadeout 0.2
+	transition "0" "1"
+	// snap
+	fps 30
+}
+
+$sequence low_idle {
+	v_pistol_anim_@lowidle
+	activity ACT_VM_IDLE_LOWERED 1
+	fadein 0.2
+	fadeout 0.2
+	node "1"
+	// snap
+	fps 30
+	loop
+}
+
+$sequence inspect {
+	v_pistol_anim_@lowidle
+	activity ACT_VM_INSPECT 1
+	fadein 0.8
+	fadeout 0.8
+	node "1"
+	// snap
+	fps 30
+	loop
+}
+
+$sequence inspect_alt {
+	v_pistol_anim_@lowidle
+	activity ACT_VM_INSPECT_ALT 1
+	fadein 0.8
+	fadeout 0.8
+	node "1"
+	// snap
+	fps 30
+	loop
+}
+
+$sequence walk {
+	v_pistol_anim_@idle01
+	activity ACT_VM_WALK 1
+	fadein 0
+	fadeout 0.9
+	// node "1"
+	snap
+	fps 75
+	loop
+}
+
+$sequence sprint {
+	v_pistol_anim_@idle01
+	activity ACT_VM_SPRINT 1
+	fadein 0
+	fadeout 0.9
+	// node "1"
+	snap
+	fps 120
+	loop
+}
+
+$sequence low_to_idle {
+	v_pistol_anim_@lowtoidle
+	activity ACT_VM_IDLE_TO_LOWERED 1
+	fadein 0.8
+	fadeout 0.2
+	transition "1" "0"
+	// snap
+	fps 30
+}

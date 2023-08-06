@@ -1,0 +1,15 @@
+"AddonInfo"
+{
+	"name"		"Oldskool Beretta 92FS"
+	"version"	"V1"
+	"up_date"	""
+	"author_name"	"Combyne"
+	"author_email"	"n/a"
+	"author_url"	"n/a"
+	
+	"info"		"Uhhh..."
+
+	
+
+	"override"	"0"
+}

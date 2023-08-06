@@ -1,0 +1,134 @@
+
+//////////////////////////////
+// Beretta 92FS
+// Attachments: None
+// Animations: Dr. Zoidberg (Niea)
+// Game Version: HL2
+// Download URL: https://gamebanana.com/skins/175472
+//////////////////////////////
+
+weapondata
+{
+
+	printname "92FS"
+	viewmodel models/weapons/v_pistol.mdl
+	playermodel models/weapons/w_pistol.mdl
+	anim_prefix pistol
+	bucket 1
+	bucket_position 0
+	bucket_360 0
+	bucket_position_360 0
+
+	clip_size 15
+	default_clip 15
+	primary_ammo pistol
+
+	weight 0
+	rumble 2
+	item_flags 32
+
+	sounddata
+	{
+
+		// Firing when the weapon is empty
+		empty weapon_pistol.empty
+
+		// When a player reloads
+		reload weapon_pistol.reload
+
+		reload_npc weapon_pistol.npc_reload
+		single_shot weapon_pistol.single
+		single_shot_npc weapon_pistol.npc_single
+		// special1 weapon_pistol.special1
+		// special2 weapon_pistol.special2
+		// burst weapon_pistol.burst
+
+	}
+
+	texturedata
+	{
+
+		weapon
+		{
+
+			font weaponicons
+			character d
+
+		}
+
+		weapon_s
+		{	
+
+			font weaponiconsselected
+			character d
+
+		}
+
+		weapon_small
+		{
+
+			font weaponiconssmall
+			character d
+
+		}
+
+		ammo
+		{
+
+			font weaponiconssmall
+			character p
+
+		}
+
+		crosshair
+		{
+
+			font crosshairs
+			character Q
+
+		}
+
+		zoom
+		{
+
+			font crosshairs
+			character Q
+
+		}
+
+		autoaim
+		{
+
+			font crosshairs
+			character Q
+
+		}
+
+		zoom_autoaim
+		{
+
+			font crosshairs
+			character Q
+
+		}
+
+	}
+
+	// MMod
+	Ironsight
+	{
+		forward -4
+		right -3.68
+		up 2.27
+		roll 0
+		pitch 0
+		yaw 0
+		fov -15
+		time 0.2
+		crosshair 1
+		chromatic 3.5
+		blur 1.0
+		adjustaccuracy 0.5 // SMod-only
+	}
+
+}

@@ -2,9 +2,10 @@
 cls
 echo Checking the directory....
 :CLEAN
-echo Cleaning all cache files.
+echo Cleaning all crap files...
 del /F /S *.cache
 del /F /S *.ztmp
+del /F /S *.sw.vtx
 del /F /S *.xbox.vtx
 del /F /S *.log
 del /F /S *.DS_Store
@@ -12,8 +13,10 @@ del /F /S *__MACOSX
 del /F /S *.mdmp
 del /F /S *.prt
 del /F /S *.lin
+del /F /S *.json
+del /F /S desktop.ini
 echo ------------------------------------------------------
-echo Removed all Cache Folder!
+echo Removed all crap files!
 goto EXIT
 
 :EXIT
